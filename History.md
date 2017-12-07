@@ -1,3 +1,7 @@
+###Release 1.4.6
+>*December 7, 2017*
+
+ * added --type flag [bf751f3](https://github.com/sovas1/gf-release/commit/bf751f3f7764b9787bb778d6ae111180a4ea964a)
 
 
 ###Release 1.4.5
