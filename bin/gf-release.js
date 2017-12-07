@@ -110,7 +110,7 @@ const onVersionsBumped = () => {
     }
 };
 
-const onRealeaseTypeChosen = choice => {
+const onReleaseTypeChosen = choice => {
     const releaseType = choice[Object.keys(choice)[0]];
     newVersion = semver.inc(currentVersion, releaseType);
 
@@ -119,11 +119,26 @@ const onRealeaseTypeChosen = choice => {
         .then(onVersionsBumped);
 };
 
+const onReleaseTypeParam = () => {
+    let releaseType = `${flags.t}`;
+    shellEx(`release type param: ${releaseType}`);
+    newVersion = semver.inc(currentVersion, releaseType);
+
+    shellEx(`git flow release start ${newVersion}`);
+    bumpVersions(config.versionFiles, newVersion)
+        .then(onVersionsBumped);
+};
+
+
 const onLastVersionResult = res => {
     currentVersion = res.version;
     currentHash = res.hash;
-    inquirer.prompt(prompts.releaseTypes)
-        .then(onRealeaseTypeChosen);
+    if (flags.t) {
+        onReleaseTypeParam();
+    } else {
+        inquirer.prompt(prompts.releaseTypes)
+            .then(onReleaseTypeChosen);
+    }
 };
 
 // Start
