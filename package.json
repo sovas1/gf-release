@@ -1,5 +1,5 @@
 {
-  "name": "gf-release",
+  "name": "@msowa/gf-release",
   "version": "1.4.6",
   "description": "gitflow release node script",
   "bin": {
@@ -17,18 +17,18 @@
     "prerelease": "xo",
     "release": "./bin/gf-release.js",
     "build": "echo \"Fake build command for testing\" && sleep 3;",
-    "history": "release-history -e 'Merge' -e 'bumped version' -e '(--)' -c https://github.com/stbaer/gf-release/commit -o History.md"
+    "history": "release-history -e 'Merge' -e 'bumped version' -e '(--)' -c https://github.com/sovas1/gf-release/commit -o History.md"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/stbaer/gf-release.git"
+    "url": "git+https://github.com/sovas1/gf-release.git"
   },
-  "author": "stbaer",
+  "author": "sovas1",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/stbaer/gf-release/issues"
+    "url": "https://github.com/sovas1/gf-release/issues"
   },
-  "homepage": "https://github.com/stbaer/gf-release#readme",
+  "homepage": "https://github.com/sovas1/gf-release#readme",
   "dependencies": {
     "args": "3.0.2",
     "chalk": "2.0.1",
@@ -58,7 +58,7 @@
       "(--)"
     ],
     "historyFile": "History.md",
-    "commitBaseUrl": "https://github.com/stbaer/gf-release/commit"
+    "commitBaseUrl": "https://github.com/sovas1/gf-release/commit"
   },
   "xo": {
     "esnext": true,
