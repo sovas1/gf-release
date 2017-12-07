@@ -52,6 +52,7 @@ Commands:
     -m, --message     enter a custom tag message, if not set it will be "Release [newVersion]"
     -n, --no-publish  don't prompt for npm publish (disabled by default)
     -s, --skip-build  skip build before finishing release
+    -t, --type        enter a bump version type - patch, minor or major
 
     -h, --help        Output usage information
     -v, --version     Output the version number
