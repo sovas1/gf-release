@@ -1,3 +1,11 @@
+
+
+###Release 1.4.7
+>*December 8, 2017*
+
+ *  [1f5e73a](https://github.com/sovas1/gf-release/commit/1f5e73a7a2d5b44bc2a14e351fe6a79529371f40)
+ * changed git repo [63c927c](https://github.com/sovas1/gf-release/commit/63c927c46a913b842f2900938fcf1d18070da83f)
+
 ###Release 1.4.6
 >*December 7, 2017*
 
