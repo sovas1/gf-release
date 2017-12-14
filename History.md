@@ -1,5 +1,14 @@
 
 
+###Release 1.4.8
+>*December 14, 2017*
+
+ * cleanup [49348d9](https://github.com/sovas1/gf-release/commit/49348d9a56c7646cb7e4ab0d87d1a67a92a76444)
+ * Merge branch 'hotfix/bad_shell_command' [855a567](https://github.com/sovas1/gf-release/commit/855a56796aa07f3abca2a8695a296643aae687c7)
+ * removed unnecessary command [282b5b1](https://github.com/sovas1/gf-release/commit/282b5b166cded66f8dc8fb9f81a93515774efb83)
+
+
+
 ###Release 1.4.7
 >*December 8, 2017*
 
