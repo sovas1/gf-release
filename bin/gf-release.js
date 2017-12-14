@@ -121,7 +121,6 @@ const onReleaseTypeChosen = choice => {
 
 const onReleaseTypeParam = () => {
     let releaseType = `${flags.t}`;
-    shellEx(`release type param: ${releaseType}`);
     newVersion = semver.inc(currentVersion, releaseType);
 
     shellEx(`git flow release start ${newVersion}`);
